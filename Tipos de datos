@@ -1,0 +1,69 @@
+/*Documentación
+ Autor: <AS>
+ Fecha: <14/02/23>
+ Descripción: Descripción de los tipos de datos en c
+*/
+
+
+#include <stdio.h>
+
+
+int main(){
+
+    int opcion;
+
+do{
+
+    printf("Ingresa La Opcion Para Brindarte La Informacion Que Requiere :");
+    printf("\n 1.-Entero \n 2.-Floatante \n 3.-Complejo \n 4.-Strings \n 5.-Bytes \n 6.-Salir \n");
+	printf("\n Ingrese una opcion: \n");
+    scanf("%d", &opcion);
+
+	switch(opcion){
+
+    case 1:;{	
+    printf("Int es un tipo de dato numerico que abarca unicamente conjuntos de numeros enteros");
+    printf("Por ejemplo: 1,2,3,4,5");
+}
+	break;
+	
+    case 2:;{
+    printf("Float es un tipo de dato numerico que abarca unicamente conjunto de numeros flotantes");
+    printf("Por ejemplo: 1.2, 2.5, 3.9, 4.8, 5.0");
+}
+	break;
+	
+    case 3:;{
+    printf("Un numero complejo es aquel con parte real y uno con parte imaginaria");
+    printf("Por ejemplo: 1i");
+}
+	break;
+	
+    case 4:;{
+    printf("Es un conjunto de caracteres");
+    printf("Por ejemplo: Hola Almundo Cruel");
+}
+	break;
+	
+    case 5:;{
+    printf("Cadenas de tecto codificadas como pata de bits inmutable");
+    printf("Por ejemplo + b'\xcf\x84o\xcf\x81\xce\xbdo\xcf\x82'.decode('utf-16')");
+}
+	break;
+	
+    case 6:;{
+    printf("Gracias Por Usar El Sistema <3");
+}
+	break;
+	
+	
+    default:
+    printf("\n La Opcion No Es La Correcta, Vuelva A Intentar\n");
+    fflush(stdin);
+	break;
+	
+		}
+	}while(opcion !=6);
+	return 0;
+
+}
