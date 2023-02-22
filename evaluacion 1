@@ -1,1 +1,165 @@
+//Todavia NO corre pero se va a arreglar
 
+/*
+ Autor: <AS>
+ Fecha: <22/02/23>
+ Descripción: Descripción de los tipos de datos en c
+*/
+
+
+#include <stdio.h>
+
+int Si=1;
+int No=0;
+float Total=(Si+No);
+
+
+
+int main(){
+
+
+	
+	    printf("Bienvenido a Citas IDK:");
+	printf("\n Oprima 1 para coninuar\n");
+
+
+
+    int opcion;
+
+
+do{
+
+//		printf("¡Hola! Bienvenido a Citas IDK:\n");
+//	printf("\n Oprima Una Tecla Numerica Para Continuar \n");
+
+    scanf("%d", &opcion, &Total);
+
+	switch(opcion){
+
+    case 1:;{	
+    printf("1) ¿Vives solo o sola?\n");
+    printf("1) Si \n");
+    printf("2) No \n");
+    scanf("%d",&Total);
+}
+	break;
+	
+    case 2:;{
+    printf("2) ¿Estudiaste lo que querías? \n");
+    printf("1) Si \n");
+    printf("2) No \n");
+    scanf("%d",&Total);
+    
+}
+	break;
+	
+    case 3:;{
+    printf("3) ¿Te gusta tener citas? \n");
+    printf("1) Si \n");
+    printf("2) No \n");
+    scanf("%d",&Total);
+    
+}
+	break;
+	
+    case 4:;{
+    printf("4) ¿Crees que es importante que tus amigos se llevan bien con tu novio/novia? ,l-n\n");
+    printf("1) Si \n");
+    printf("2) No \n");
+    scanf("%d",&Total);
+    
+}
+	break;
+	
+    case 5:;{
+    printf("5) ¿Te has enamorado a primera vista?\n");
+	printf("1) Si \n");
+    printf("2) No \n");
+    scanf("%d",&Total);
+    
+}
+	break;
+	
+	case 6:;{	
+    printf("6) ¿Alguna vez te has enamorado del novio o novia de un amigo? \n");
+    printf("1) Si \n");
+    printf("2) No \n");
+    scanf("%d",&Total);
+    
+}
+	break;
+	
+    case 7:;{
+    printf("7) ¿Suele la gente formarse una idea equivocada de ti? \n");
+    printf("1) Si \n");
+    printf("2) No \n");
+    scanf("%d",&Total);
+    
+}
+	break;
+	
+    case 8:;{
+    printf("8) ¿Eres usualmente prejuicioso con las personas?\n");
+    printf("1) Si \n");
+    printf("2) No \n");
+    scanf("%d",&Total);
+    
+}
+	break;
+	
+    case 9:;{
+    printf("9) ¿Sueles ser amigo/a de tus ex?\n");
+    printf("1) Si \n");
+    printf("2) No \n");
+    scanf("%d",&Total);
+    
+}
+	break;
+	
+    case 10:;{
+    printf("10) ¿Alguna vez has probado drogas?\n");
+    printf("1) Si \n");
+    printf("2) No \n");
+}
+
+	break;
+    case 11:;{
+    printf("11) Terminar \n");
+    printf("1) Si \n");
+    scanf("%d",&Total);
+    
+}
+	break;
+	
+	case 12:;{
+    printf("El Total de preguntas aceptadas son %d \n");
+
+}
+	break;
+	
+	 case 13:;{
+    printf("Gracias Por Usar El Sistema <3 \n");
+}
+	break;
+	
+	
+	default:
+	printf("\n La Opcion No Es La Correcta, Vuelva A Intentar\n");
+	break;
+	
+		}
+	}while(opcion !=13);
+
+	if(Total<=7){
+		
+			printf("Es tu alma gemela");
+			
+		}else{
+		
+			printf("No hay opción");
+		
+	}
+
+	return 0;
+
+}
