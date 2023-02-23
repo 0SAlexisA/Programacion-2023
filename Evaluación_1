@@ -27,7 +27,7 @@ y se le asignaran al ambito de total
 	    printf("2) No \n");  	
 	  		scanf("%d", &total);
 	  			if (total == 1) {
-	    			puntos++;
+	    				puntos++;
 	  }
 	
 		printf("2.-¿Te Gusta Tener Citas?\n");
@@ -35,7 +35,7 @@ y se le asignaran al ambito de total
 	    printf("2) No \n");
 		  	scanf("%d", &total);
 		  		if (total == 1) {
-	      			puntos++;
+	      				puntos++;
 	  }
 	
 		printf("3.-¿Viven Cerca Para Salir?\n");
@@ -51,7 +51,7 @@ y se le asignaran al ambito de total
 	    printf("2) No \n");
 	  	  	scanf("%d", &total);
 		  	 	if (total == 1) {
-	      			puntos++;
+	      				puntos++;
 	  }
 	
 		printf("5.-¿Coinciden  En Alguna Meta A Corto, Mediano O Largo Plazo?\n");
@@ -59,7 +59,7 @@ y se le asignaran al ambito de total
 	    printf("2) No \n");
 	  		scanf("%d", &total);
 	  			if (total == 1) {
-	    			puntos++;
+	    				puntos++;
 	  }
 	
 	  	printf("6.-¿La Quieres Como Tu GYM Girlo GYM Boy?\n");
@@ -67,7 +67,7 @@ y se le asignaran al ambito de total
 	    printf("2) No \n");
 	  		scanf("%d", &total);
 	  			if (total == 1) {
-	    			puntos++;
+	    				puntos++;
 	  }
 	
 		printf("7.-¿Crees Que Es Importante Que Tus Amigos Se Llevan Bien Con Tu Novio/Novia?\n");
@@ -83,7 +83,7 @@ y se le asignaran al ambito de total
 	    printf("2) No \n");
 	 		scanf("%d", &total);
 	  			if (total == 1) {
-	    			puntos++;
+	    				puntos++;
 	  }
 	
 	  	printf("9.-¿Le gusta leer?\n");
@@ -91,7 +91,7 @@ y se le asignaran al ambito de total
 	    printf("2) No \n");
 	  		scanf("%d", &total);
 	  			if (total == 1) {
-	    			puntos++;
+	    				puntos++;
 	  }
 	
 	  	printf("10.-¿Tienen Charla Fluida, Con Temas Interesantes Para Los Dos?\n");
@@ -99,7 +99,7 @@ y se le asignaran al ambito de total
 	    printf("2) No \n");
 	  		scanf("%d", &total);
 	  			if (total == 1) {
-	    			puntos++;
+	    				puntos++;
 	  }
 
 /*
