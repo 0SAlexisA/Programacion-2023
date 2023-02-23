@@ -1,0 +1,137 @@
+/*
+ Autor: <AS>
+ Fecha: <22/02/23>
+ Descripción: App de Citas
+*/
+
+//Se declara a libreria a usar para el sistema
+
+#include <stdio.h>
+
+//Se declara el tipo de datos a reconocer y se le da un inicio al programa
+ 
+int main() {
+  	int puntos = 0;
+  	int total;
+	  	printf("¡Hola! Bienvenido A...¿Ya Pase La ENR? \n");
+		printf("\nOprima Una Tecla Numerica Para Continuar y De La Misma Forma Para Contestar Las preguntas Para Conocer El  AMOR\n");
+		
+/*
+Se le interrogara con 10 preguntas para saber la compatibilidad con la persona, 
+dandole dos opciones, que seran escaneadas para poder darle el conteo de estas,
+y se le asignaran al ambito de total
+*/	
+	
+	 	printf("1.-¿Vives Solo o Sola?\n");
+		printf("1) Si \n");
+	    printf("2) No \n");  	
+	  		scanf("%d", &total);
+	  			if (total == 1) {
+	    			puntos++;
+	  }
+	
+		printf("2.-¿Te Gusta Tener Citas?\n");
+	    printf("1) Si \n");
+	    printf("2) No \n");
+		  	scanf("%d", &total);
+		  		if (total == 1) {
+	      			puntos++;
+	  }
+	
+		printf("3.-¿Viven Cerca Para Salir?\n");
+	    printf("1) Si \n");
+	    printf("2) No \n");
+		  	scanf("%d", &total);
+		  		if (total == 1) {
+					puntos++;
+	  }
+	
+		printf("4.-¿Te Ves En Una Relacion Duradera?\n");
+	    printf("1) Si \n");
+	    printf("2) No \n");
+	  	  	scanf("%d", &total);
+		  	 	if (total == 1) {
+	      			puntos++;
+	  }
+	
+		printf("5.-¿Coinciden  En Alguna Meta A Corto, Mediano O Largo Plazo?\n");
+	    printf("1) Si \n");
+	    printf("2) No \n");
+	  		scanf("%d", &total);
+	  			if (total == 1) {
+	    			puntos++;
+	  }
+	
+	  	printf("6.-¿La Quieres Como Tu GYM Girlo GYM Boy?\n");
+	    printf("1) Si \n");
+	    printf("2) No \n");
+	  		scanf("%d", &total);
+	  			if (total == 1) {
+	    			puntos++;
+	  }
+	
+		printf("7.-¿Crees Que Es Importante Que Tus Amigos Se Llevan Bien Con Tu Novio/Novia?\n");
+	    printf("1) Si \n");
+	    printf("2) No \n");
+		  	scanf("%d", &total);
+		  		if (total == 1) {
+		  			puntos++;
+	  }
+	
+	  	printf("8.-¿Les Gustan Las Animales Domesticos?\n");
+	    printf("1) Si \n");
+	    printf("2) No \n");
+	 		scanf("%d", &total);
+	  			if (total == 1) {
+	    			puntos++;
+	  }
+	
+	  	printf("9.-¿Le gusta leer?\n");
+	    printf("1) Si \n");
+	    printf("2) No \n");
+	  		scanf("%d", &total);
+	  			if (total == 1) {
+	    			puntos++;
+	  }
+	
+	  	printf("10.-¿Tienen Charla Fluida, Con Temas Interesantes Para Los Dos?\n");
+	    printf("1) Si \n");
+	    printf("2) No \n");
+	  		scanf("%d", &total);
+	  			if (total == 1) {
+	    			puntos++;
+	  }
+
+/*
+Se Declaran las Respuestas Dependiendo A Sus Respuestas Si
+Cumplen Con El Parametro (<7) Y Saber Si Paso El ENR
+*/
+	
+	  	printf("\nTu puntuación es: %d/10\n", puntos);
+	  			if (puntos < 7){
+	  	printf("No Se Corresponden, Es Preferible Que No Tomes El Riesgo");
+	  }
+	  			if (puntos >= 7){
+		printf("Son Compatibles Ahora Solo Tienes Que Qasar El ENR");
+	  }
+	  return 0;
+	}
+	
+	
+/*
+Querido programador:
+
+Cuando hice el codigo, solo dios y yo
+sabiamos como podria funcionar.
+Ahora,¡Solo dios lo sabe!
+
+Asi que si trata de tener una mejor optimización
+y fracasa, por favor, incremente 
+el contador de lineas y las horas perdidas
+para su optimización.
+
+Horas perdidas:
+Ultimo conteo de lineas del programa:116 
+Ultimo día que se hizo el conteo:23/02/23
+
+*/
