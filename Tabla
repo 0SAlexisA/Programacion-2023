@@ -1,0 +1,23 @@
+/*
+ Autor: <AS>
+ Fecha: <05/03/23>
+ Descripción: Tabla
+*/
+
+#include<stdio.h>
+
+int main(){
+
+    printf("Tabla de multiplicar \n ");
+
+    int Numero, i;
+
+    printf("Introduce el numero del que quieras saber la tabla de multiplicar ");
+    printf("\n El numero a multiplicar es: ");
+    scanf("%d", &Numero);
+    printf("\n La tabla es:  ");
+    for (i =1; i <= 10; i++){
+    printf("\n %d * %d = %d", i ,Numero,  Numero * i);
+    }
+    return 0;
+}
