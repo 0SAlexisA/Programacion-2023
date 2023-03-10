@@ -22,6 +22,11 @@ int printMenu(){
         return 0;
 }
 
+int num1,num2,sumar;
+int n1,n2,restar;
+float numero1,numero2,dividir;
+int mult, enum1,enum2;
+
 int main(){
     char inutil;
     int flag = 0;
@@ -33,7 +38,7 @@ int main(){
             
             case 1:
                 printf("\n1 Suma");
-                int num1,num2,sumar;
+
                 printf( "\n   Introduzca primer numero: " );
                 scanf( "%d", &num1 );
                 printf( "\n   Introduzca segundo numero: " );
@@ -50,7 +55,7 @@ int main(){
             
             case 2:
                 printf("\n2 Resta");
-                int n1,n2,restar;
+                
                     printf( "\n   Introduzca primer numero: " );
                     scanf( "%d", &n1 );
                     printf( "\n   Introduzca segundo numero: " );
@@ -67,7 +72,7 @@ int main(){
             
             case 3:
                 printf("\n4 Division");
-                float numero1,numero2,dividir;
+                
                 printf( "\n   Introduzca primer numero: " );
                 scanf( "%f", &numero1 );
                 printf( "\n   Introduzca segundo numero: " );
@@ -80,7 +85,7 @@ int main(){
             
             case 4:
                 printf("\n3 Multiplicacion");
-                int mult, enum1,enum2;
+                
                     printf( "\n   Introduzca primer numero: " );
                     scanf( "%d", &enum1);
                     printf( "\n   Introduzca segundo numero: " );
