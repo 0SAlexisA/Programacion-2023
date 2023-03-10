@@ -84,3 +84,22 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+ ''' 
+    #---------------------INSTRUCCIONES-----------------------
+Resuelva: 
+1. ¿Qué es lo que hace el código en un comentario antes de modificarlo?
+Imprime un Menú
+
+2. ¿Cuál es la sintaxis de un while?
+Crea un bucle en el cual no sabe cuándo parar, funciona al fallo.
+
+3. ¿Existe switch en python?
+No existe, sin embargo, hay diferentes formas llevarlo a cabo, como la que estamos haciendo...
+
+4. ¿Qué es un elif?
+Nos ayuda a poder enlazar diferentes If else sin aumentar las tabulaciones
+
+5. ¿Qué función de se ejecuta al correr el script?
+Un menú que te deja selecciona la opción a realizar con operaciones aritméticas como lo son la suma, resta, multiplicación y división, con un botón para que puedas repetir la operación
+ ''' 
