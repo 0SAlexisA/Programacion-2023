@@ -1,11 +1,11 @@
 /*
  Autor: <AS>
- Fecha: <22/02/23>
- Descripción: App de Citas
+ Fecha: <10/03/23>
+ Descripción: Calculadora 
 */
 
 #include <stdio.h>
-#include <conio.h>
+
 #include <stdlib.h>
 
 int printMenu(){
