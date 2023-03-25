@@ -17,26 +17,32 @@ case 1:
 		{
 	do
 	{
-		printf("¿Qué horario desea saber?:\n 1) \n2) \n3) \n4)Terminar\n");
+		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");
 		scanf("%i",&selec);
 		switch(selec)
 		{
 		case 1:
-			printf("Ingrese Los Grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 2:
-			printf("Ingrese los grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 3:
-			printf("Ingrese los grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 4:
 			printf("Gracias Por Usar Este Programa 7u7 \n");
 			break;
-		
+      
 		;
 		}
 
@@ -50,25 +56,33 @@ case 2:
 		{
 	do
 	{
-		printf("¿Qué horario desea saber?:\n 1) \n2) \n3) \n4)Terminar\n");
+		printf("¿Qué horario desea saber?:\n1) \n2) \n3) \n4)Terminar\n");
 		scanf("%i",&selec);
 		switch(selec)
 		{
 		case 1:
-			printf("Ingrese Los Grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 2:
-			printf("Ingrese los grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 3:
-			printf("Ingrese los grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
+		
 			break;
       
 		case 4:
 			printf("Gracias Por Usar Este Programa 7u7 \n");
 			break;
+      
 		
 		;
 		}
@@ -82,20 +96,27 @@ case 3:
 		{
 	do
 	{
-		printf("¿Qué horario desea saber?:\n 1) \n2) \n3) \n4)Terminar\n");
+		printf("¿Qué horario desea saber?:\n1) \n2) \n3) \n4)Terminar\n");
 		scanf("%i",&selec);
 		switch(selec)
 		{
 		case 1:
-			printf("Ingrese Los Grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 2:
-			printf("Ingrese los grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 3:
-			printf("Ingrese los grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
+		
 			break;
       
 		case 4:
@@ -114,20 +135,27 @@ case 4:
 		{
 	do
 	{
-		printf("¿Qué horario desea saber?:\n 1) \n2) \n3) \n4)Terminar\n");
+		printf("¿Qué horario desea saber?:\n1) \n2) \n3) \n4)Terminar\n");
 		scanf("%i",&selec);
 		switch(selec)
 		{
 		case 1:
-			printf("Ingrese Los Grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 2:
-			printf("Ingrese los grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 3:
-			printf("Ingrese los grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
+		
 			break;
       
 		case 4:
@@ -147,26 +175,33 @@ case 5:
 		{
 	do
 	{
-		printf("¿Qué horario desea saber?:\n 1) \n2) \n3) \n4)Terminar\n");
+		printf("¿Qué horario desea saber?:\n1) \n2) \n3) \n4)Terminar\n");
 		scanf("%i",&selec);
 		switch(selec)
 		{
-		case 1:
-			printf("Ingrese Los Grados \n");
+
+				case 1:
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 2:
-			printf("Ingrese los grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 3:
-			printf("Ingrese los grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
+		
 			break;
       
 		case 4:
 			printf("Gracias Por Usar Este Programa 7u7 \n");
 			break;
-		
 		;
 		}
 
@@ -180,20 +215,27 @@ case 6:
 		{
 	do
 	{
-		printf("¿Qué horario desea saber?:\n 1) \n2) \n3) \n4)Terminar\n");
+		printf("¿Qué horario desea saber?:\n1) \n2) \n3) \n4)Terminar\n");
 		scanf("%i",&selec);
 		switch(selec)
 		{
 		case 1:
-			printf("Ingrese Los Grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 2:
-			printf("Ingrese los grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 3:
-			printf("Ingrese los grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
+		
 			break;
       
 		case 4:
@@ -213,26 +255,32 @@ case 7:
 		{
 	do
 	{
-		printf("¿Qué horario desea saber?:\n 1) \n2) \n3) \n4)Terminar\n");
+		printf("¿Qué horario desea saber?:\n1) \n2) \n3) \n4)Terminar\n");
 		scanf("%i",&selec);
 		switch(selec)
 		{
 		case 1:
-			printf("Ingrese Los Grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 2:
-			printf("Ingrese los grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 3:
-			printf("Ingrese los grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
+		
 			break;
       
 		case 4:
 			printf("Gracias Por Usar Este Programa 7u7 \n");
 			break;
-		
 		;
 		}
 
@@ -246,20 +294,27 @@ case 8:
 		{
 	do
 	{
-		printf("¿Qué horario desea saber?:\n 1) \n2) \n3) \n4)Terminar\n");
+		printf("¿Qué horario desea saber?:\n1) \n2) \n3) \n4)Terminar\n");
 		scanf("%i",&selec);
 		switch(selec)
 		{
 		case 1:
-			printf("Ingrese Los Grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 2:
-			printf("Ingrese los grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 3:
-			printf("Ingrese los grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
+		
 			break;
       
 		case 4:
@@ -280,20 +335,27 @@ case 9:
 		{
 	do
 	{
-		printf("¿Qué horario desea saber?:\n 1) \n2) \n3) \n4)Terminar\n");
+		printf("¿Qué horario desea saber?:\n1) \n2) \n3) \n4)Terminar\n");
 		scanf("%i",&selec);
 		switch(selec)
 		{
 		case 1:
-			printf("Ingrese Los Grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 2:
-			printf("Ingrese los grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 3:
-			printf("Ingrese los grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
+		
 			break;
       
 		case 4:
@@ -313,20 +375,27 @@ case 10:
 		{
 	do
 	{
-		printf("¿Qué horario desea saber?:\n 1) \n2) \n3) \n4)Terminar\n");
+		printf("¿Qué horario desea saber?:\n1) \n2) \n3) \n4)Terminar\n");
 		scanf("%i",&selec);
 		switch(selec)
 		{
 		case 1:
-			printf("Ingrese Los Grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 2:
-			printf("Ingrese los grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
 			break;
       
 		case 3:
-			printf("Ingrese los grados \n");
+			printf("Costo \n");
+			printf("Horarios \n");
+
+		
 			break;
       
 		case 4:
