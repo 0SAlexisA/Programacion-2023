@@ -8,7 +8,8 @@ int  main(){
 	int selec;
 
 	do{
-	printf("MENU PRINCIPAL\n");
+	printf("¡Bienvenido! a Puma Foraneo\n");
+	printf("Menu Principal\n");
 	printf("Selecciona la ruta\n1)CU a Xochimilco \n2)CU a Deportiva Sta.Cruz \n3)CU a Tulyehualco \n4)CU a Tlahuac \n5)CU a Milpa Alta \n6)CU a Mixquic \n7)CU A Chalco \n8)CU a San Pablo \n9)CU a San Bartolo \n10)CU a San Mateo\n");
 	printf("Seleccionaste la opcion:\n");
 		scanf("%d",&opcion);	
