@@ -8,12 +8,14 @@ int  main(){
 	int selec;
 
 	do{
+	printf("MENU PRINCIPAL\n");
 	printf("Selecciona la ruta\n1)CU a Xochimilco \n2)CU a Deportiva Sta.Cruz \n3)CU a Tulyehualco \n4)CU a Tlahuac \n5)CU a Milpa Alta \n6)CU a Mixquic \n7)CU A Chalco \n8)CU a San Pablo \n9)CU a San Bartolo \n10)CU a San Mateo\n");
+	printf("Seleccionaste la opcion:\n");
 		scanf("%d",&opcion);	
 		switch(opcion){
 
 case 1:
-		printf("a \n", opcion);
+		printf("CU a Xochimilco \n", opcion);
 		{
 	do
 	{
@@ -24,19 +26,19 @@ case 1:
 		case 1:
 			printf("Costo \n");
 			printf("Horarios \n");
-
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 2:
 			printf("Costo \n");
 			printf("Horarios \n");
-
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 3:
 			printf("Costo \n");
 			printf("Horarios \n");
-
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 4:
@@ -52,7 +54,7 @@ case 1:
 		break;
 
 case 2:
-		printf("a \n", opcion);
+		printf("CU a Deportiva Sta.Cruz \n", opcion);
 		{
 	do
 	{
@@ -63,20 +65,19 @@ case 2:
 		case 1:
 			printf("Costo \n");
 			printf("Horarios \n");
-
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 2:
 			printf("Costo \n");
 			printf("Horarios \n");
-
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 3:
 			printf("Costo \n");
 			printf("Horarios \n");
-
-		
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 4:
@@ -92,7 +93,7 @@ case 2:
 }
 
 case 3:
-		printf("a \n", opcion);
+		printf("CU a Tulyehualco \n", opcion);
 		{
 	do
 	{
@@ -103,20 +104,19 @@ case 3:
 		case 1:
 			printf("Costo \n");
 			printf("Horarios \n");
-
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 2:
 			printf("Costo \n");
 			printf("Horarios \n");
-
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 3:
 			printf("Costo \n");
 			printf("Horarios \n");
-
-		
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 4:
@@ -131,7 +131,7 @@ case 3:
 }
 
 case 4:
-		printf("a \n", opcion);
+		printf("CU a Tlahuac \n", opcion);
 		{
 	do
 	{
@@ -142,20 +142,19 @@ case 4:
 		case 1:
 			printf("Costo \n");
 			printf("Horarios \n");
-
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 2:
 			printf("Costo \n");
 			printf("Horarios \n");
-
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 3:
 			printf("Costo \n");
 			printf("Horarios \n");
-
-		
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 4:
@@ -171,7 +170,7 @@ case 4:
 
 
 case 5:
-		printf("a \n", opcion);
+		printf("CU a Milpa Alta \n", opcion);
 		{
 	do
 	{
@@ -180,23 +179,22 @@ case 5:
 		switch(selec)
 		{
 
-				case 1:
+		case 1:
 			printf("Costo \n");
 			printf("Horarios \n");
-
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 2:
 			printf("Costo \n");
 			printf("Horarios \n");
-
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 3:
 			printf("Costo \n");
 			printf("Horarios \n");
-
-		
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 4:
@@ -211,7 +209,7 @@ case 5:
 }
 
 case 6:
-		printf("a \n", opcion);
+		printf("CU a Mixquic \n", opcion);
 		{
 	do
 	{
@@ -222,20 +220,19 @@ case 6:
 		case 1:
 			printf("Costo \n");
 			printf("Horarios \n");
-
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 2:
 			printf("Costo \n");
 			printf("Horarios \n");
-
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 3:
 			printf("Costo \n");
 			printf("Horarios \n");
-
-		
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 4:
@@ -251,7 +248,7 @@ case 6:
 }
 
 case 7:
-		printf("a \n", opcion);
+		printf("CU A Chalco \n", opcion);
 		{
 	do
 	{
@@ -262,20 +259,19 @@ case 7:
 		case 1:
 			printf("Costo \n");
 			printf("Horarios \n");
-
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 2:
 			printf("Costo \n");
 			printf("Horarios \n");
-
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 3:
 			printf("Costo \n");
 			printf("Horarios \n");
-
-		
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 4:
@@ -290,7 +286,7 @@ case 7:
 }
 
 case 8:
-		printf("a \n", opcion);
+		printf("CU a San Pablo \n", opcion);
 		{
 	do
 	{
@@ -301,20 +297,19 @@ case 8:
 		case 1:
 			printf("Costo \n");
 			printf("Horarios \n");
-
-			break;
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
+			break;;
       
 		case 2:
 			printf("Costo \n");
 			printf("Horarios \n");
-
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 3:
 			printf("Costo \n");
 			printf("Horarios \n");
-
-		
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 4:
@@ -331,7 +326,7 @@ case 8:
 
 
 case 9:
-		printf("a \n", opcion);
+		printf("CU a San Bartolo \n", opcion);
 		{
 	do
 	{
@@ -342,20 +337,19 @@ case 9:
 		case 1:
 			printf("Costo \n");
 			printf("Horarios \n");
-
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 2:
 			printf("Costo \n");
 			printf("Horarios \n");
-
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 3:
 			printf("Costo \n");
 			printf("Horarios \n");
-
-		
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 4:
@@ -371,7 +365,7 @@ case 9:
 }
 
 case 10:
-		printf("a \n", opcion);
+		printf("CU a San Mateo \n", opcion);
 		{
 	do
 	{
@@ -382,20 +376,19 @@ case 10:
 		case 1:
 			printf("Costo \n");
 			printf("Horarios \n");
-
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 2:
 			printf("Costo \n");
 			printf("Horarios \n");
-
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 3:
 			printf("Costo \n");
 			printf("Horarios \n");
-
-		
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
 			break;
       
 		case 4:
