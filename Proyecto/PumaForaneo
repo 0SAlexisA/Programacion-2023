@@ -59,7 +59,7 @@ case 2:
 		{
 	do
 	{
-		printf("¿Qué horario desea saber?:\n1) \n2) \n3) \n4)Terminar\n");
+		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");
 		scanf("%i",&selec);
 		switch(selec)
 		{
@@ -98,7 +98,7 @@ case 3:
 		{
 	do
 	{
-		printf("¿Qué horario desea saber?:\n1) \n2) \n3) \n4)Terminar\n");
+		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");
 		scanf("%i",&selec);
 		switch(selec)
 		{
@@ -136,7 +136,7 @@ case 4:
 		{
 	do
 	{
-		printf("¿Qué horario desea saber?:\n1) \n2) \n3) \n4)Terminar\n");
+		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");
 		scanf("%i",&selec);
 		switch(selec)
 		{
@@ -175,7 +175,7 @@ case 5:
 		{
 	do
 	{
-		printf("¿Qué horario desea saber?:\n1) \n2) \n3) \n4)Terminar\n");
+		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");
 		scanf("%i",&selec);
 		switch(selec)
 		{
@@ -214,7 +214,7 @@ case 6:
 		{
 	do
 	{
-		printf("¿Qué horario desea saber?:\n1) \n2) \n3) \n4)Terminar\n");
+		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");
 		scanf("%i",&selec);
 		switch(selec)
 		{
@@ -253,7 +253,7 @@ case 7:
 		{
 	do
 	{
-		printf("¿Qué horario desea saber?:\n1) \n2) \n3) \n4)Terminar\n");
+		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");		
 		scanf("%i",&selec);
 		switch(selec)
 		{
@@ -291,7 +291,7 @@ case 8:
 		{
 	do
 	{
-		printf("¿Qué horario desea saber?:\n1) \n2) \n3) \n4)Terminar\n");
+		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");
 		scanf("%i",&selec);
 		switch(selec)
 		{
@@ -331,7 +331,7 @@ case 9:
 		{
 	do
 	{
-		printf("¿Qué horario desea saber?:\n1) \n2) \n3) \n4)Terminar\n");
+		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");
 		scanf("%i",&selec);
 		switch(selec)
 		{
@@ -370,7 +370,7 @@ case 10:
 		{
 	do
 	{
-		printf("¿Qué horario desea saber?:\n1) \n2) \n3) \n4)Terminar\n");
+		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");
 		scanf("%i",&selec);
 		switch(selec)
 		{
