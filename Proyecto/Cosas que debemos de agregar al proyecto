@@ -1,0 +1,33 @@
+---Estructura de datos---
+
+struct datos{
+    char nombre;
+    char ISBN;
+    char autores;
+    char editorial;
+    int numPag;
+    float precio;
+} 
+
+--Estructura de nombres--
+typedef struct{
+    char* nombre;
+    char* ISBN;
+    char** autores;
+    char* editorial;
+    int numPag;
+    float precio;
+} libro;
+
+---Arreglo de 3 elementos---
+
+int main(){
+    libro libros[5];
+    libros[0].precio=50.0;
+    printf("%f",libros[0].precio=50.0);
+    char cadena1[] = "parangaricutirimicuaro";
+    char cadena2[] = " apellido";
+    char* sub =getSubStr(cadena1,5,9);
+    char* string = concat(cadena1, cadena2);
+    printf("%s",sub);
+}
