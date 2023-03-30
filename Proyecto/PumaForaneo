@@ -17,11 +17,13 @@ int  main(){
 
 case 1:
 		printf("CU a Xochimilco \n", opcion);
+		system("clear"); 
 		{
 	do
 	{
 		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");
 		scanf("%i",&selec);
+		system("clear");
 		switch(selec)
 		{
 		case 1:
@@ -56,10 +58,12 @@ case 1:
 
 case 2:
 		printf("CU a Deportiva Sta.Cruz \n", opcion);
+		system("clear");
 		{
 	do
 	{
 		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");
+		system("clear");
 		scanf("%i",&selec);
 		switch(selec)
 		{
@@ -95,10 +99,12 @@ case 2:
 
 case 3:
 		printf("CU a Tulyehualco \n", opcion);
+		system("clear");
 		{
 	do
 	{
 		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");
+		system("clear");
 		scanf("%i",&selec);
 		switch(selec)
 		{
@@ -133,10 +139,12 @@ case 3:
 
 case 4:
 		printf("CU a Tlahuac \n", opcion);
+		system("clear");
 		{
 	do
 	{
 		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");
+		system("clear");
 		scanf("%i",&selec);
 		switch(selec)
 		{
@@ -172,10 +180,12 @@ case 4:
 
 case 5:
 		printf("CU a Milpa Alta \n", opcion);
+		system("clear");
 		{
 	do
 	{
 		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");
+		system("clear");
 		scanf("%i",&selec);
 		switch(selec)
 		{
@@ -211,10 +221,12 @@ case 5:
 
 case 6:
 		printf("CU a Mixquic \n", opcion);
+		system("clear");
 		{
 	do
 	{
 		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");
+		system("clear");
 		scanf("%i",&selec);
 		switch(selec)
 		{
@@ -250,10 +262,12 @@ case 6:
 
 case 7:
 		printf("CU A Chalco \n", opcion);
+		system("clear");
 		{
 	do
 	{
-		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");		
+		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");	
+		system("clear");
 		scanf("%i",&selec);
 		switch(selec)
 		{
@@ -288,10 +302,12 @@ case 7:
 
 case 8:
 		printf("CU a San Pablo \n", opcion);
+		system("clear");
 		{
 	do
 	{
 		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");
+		system("clear");
 		scanf("%i",&selec);
 		switch(selec)
 		{
@@ -328,10 +344,12 @@ case 8:
 
 case 9:
 		printf("CU a San Bartolo \n", opcion);
+		system("clear");
 		{
 	do
 	{
 		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");
+		system("clear");
 		scanf("%i",&selec);
 		switch(selec)
 		{
@@ -367,10 +385,12 @@ case 9:
 
 case 10:
 		printf("CU a San Mateo \n", opcion);
+		system("clear");
 		{
 	do
 	{
 		printf("¿Qué horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n");
+		system("clear");
 		scanf("%i",&selec);
 		switch(selec)
 		{
