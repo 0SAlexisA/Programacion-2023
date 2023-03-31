@@ -16,7 +16,7 @@ int  main(){
 		switch(opcion){
 
 case 1:
-		printf("CU a Xochimilco \n", opcion);
+		printf("CU a Xochimilco \n");
 		{
 	do
 	{
@@ -55,7 +55,7 @@ case 1:
 		break;
 
 case 2:
-		printf("CU a Deportiva Sta.Cruz \n", opcion);
+		printf("CU a Deportiva Sta.Cruz \n");
 		{
 	do
 	{
@@ -94,7 +94,7 @@ case 2:
 }
 
 case 3:
-		printf("CU a Tulyehualco \n", opcion);
+		printf("CU a Tulyehualco \n");
 		{
 	do
 	{
@@ -132,7 +132,7 @@ case 3:
 }
 
 case 4:
-		printf("CU a Tlahuac \n", opcion);
+		printf("CU a Tlahuac \n");
 		{
 	do
 	{
@@ -171,7 +171,7 @@ case 4:
 
 
 case 5:
-		printf("CU a Milpa Alta \n", opcion);
+		printf("CU a Milpa Alta \n");
 		{
 	do
 	{
@@ -210,7 +210,7 @@ case 5:
 }
 
 case 6:
-		printf("CU a Mixquic \n", opcion);
+		printf("CU a Mixquic \n");
 		{
 	do
 	{
@@ -249,7 +249,7 @@ case 6:
 }
 
 case 7:
-		printf("CU A Chalco \n", opcion);
+		printf("CU A Chalco \n");
 		{
 	do
 	{
@@ -287,7 +287,7 @@ case 7:
 }
 
 case 8:
-		printf("CU a San Pablo \n", opcion);
+		printf("CU a San Pablo \n");
 		{
 	do
 	{
@@ -327,7 +327,7 @@ case 8:
 
 
 case 9:
-		printf("CU a San Bartolo \n", opcion);
+		printf("CU a San Bartolo \n");
 		{
 	do
 	{
@@ -366,7 +366,7 @@ case 9:
 }
 
 case 10:
-		printf("CU a San Mateo \n", opcion);
+		printf("CU a San Mateo \n");
 		{
 	do
 	{
