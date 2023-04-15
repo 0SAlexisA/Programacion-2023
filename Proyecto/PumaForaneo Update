@@ -1,0 +1,373 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+char globalMaturino_0= ("11:00");
+char globalVespertino_0=("12:00");
+char globalNocturno_0= ("21:00");
+char globalMaturino_1= ("11:15");
+char globalVespertino_1= ("12:15");
+char globalNocturno_1= ("21:15");
+char globalMaturino_2= ("11:30");
+char globalVespertino_2= ("12:30");
+char globalNocturno_2= ("21:30");
+char globalMaturino_3= ("11:45");
+char globalVespertino_3= ("12:45");
+char globalNocturno_3= ("21:45");
+char globalVespertino_4= ("13:00");
+char globalNocturno_4= ("22:00");
+
+	int globalPrecio_0= 22;	//Se repite:1 En la ruta:Xochimilco
+  int globalPrecio_1= 32;	//Se repite:3 En la ruta:Tulyehualco,Tlahuac,Milpa Alta
+  int globalPrecio_2= 34;	//Se repite:2 En la ruta:Mixquic, San pablo
+	int globalPrecio_3= 45;	//Se repite:1 En la ruta:Chalco
+  int globalPrecio_4= 30;	//Se repite:1	 En la ruta:San Mateo
+
+
+int main(void) {
+    int opcion;
+    int selec;
+
+	do{
+	printf("¡Bienvenido! a Puma Foraneo\n");
+	printf("Menu Principal\n");
+	printf("Selecciona la ruta\n1)CU a Xochimilco \n2)CU a Deportiva Sta.Cruz \n3)CU a Tulyehualco \n4)CU a Tlahuac \n5)CU a Milpa Alta \n6)CU a Mixquic \n7)CU A Chalco \n8)CU a San Pablo \n9)CU a San Bartolo \n10)CU a San Mateo\n");
+	printf("Seleccionaste la opcion:\n");
+		scanf("%d",&opcion);	
+		switch(opcion){
+
+case 1:
+		printf("CU a Xochimilco \n");
+		system("clear");
+		{
+	do
+	{
+		printf("¿Qué horario desea saber?:\n1)Matutino 2)Vespertino \n3)Nocturno \n4)Terminar\n\n");
+		scanf("%i",&selec);
+		system("clear");
+		switch(selec)
+		{
+		case 1:
+			printf("Costo %d, globalPrecio_0 \n");
+			printf("Horarios \n");
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
+			break;
+      
+		case 2:
+			printf("Costo %d, globalPrecio_0 \n");
+			printf("Horarios, \n");
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
+			break;
+      
+		case 3:
+			printf("Costo %d, globalPrecio_0 \n");
+			printf("Horarios \n");
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
+			break;
+      
+		case 4:
+			printf("Gracias Por Usar Este Programa 7u7 \n");
+			break;
+      
+		;
+		}
+
+	}while(selec!=4);
+	return 0;
+}
+		break;
+
+case 2:
+		printf("CU a Deportiva Sta.Cruz \n");
+		system("clear");
+		{
+	do
+	{
+		printf("¿Qué horario desea saber?:\n1)Vespertino \n2)Nocturno \n3)Terminar\n");
+		scanf("%i",&selec);
+		system("clear");
+		switch(selec)
+		{
+		case 1:
+			printf("Costo: \n");
+			printf("Horarios \n");
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
+			break;
+      
+		case 2:
+			printf("Costo \n");
+			printf("Horarios \n");
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
+			break;
+      
+      
+		case 3:
+			printf("Gracias Por Usar Este Programa 7u7 \n");
+			break;
+      
+		
+		;
+		}
+
+	}while(selec!=3);
+	return 0;
+}
+
+case 3:
+		printf("CU a Tulyehualco \n");
+		system("clear");
+		{
+	do
+	{
+		printf("¿Qué horario desea saber?:\n1)Vespertino \n2)Nocturno \n3)Terminar\n");
+		scanf("%i",&selec);
+		system("clear");
+		switch(selec)
+		{
+		case 1:
+			printf("Costo: %d, globalPrecio_1 \n");
+			printf("Horarios \n");
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
+			break;
+      
+		case 2:
+			printf("Costo: %d, globalPrecio_1 \n");
+			printf("Horarios \n");
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
+			break;
+      
+		case 3:
+			printf("Gracias Por Usar Este Programa 7u7 \n");
+			break;
+		
+		;
+		}
+
+	}while(selec!=3);
+	return 0;
+}
+
+case 4:
+		printf("CU a Tlahuac \n");
+		system("clear");
+		{
+	do
+	{
+		printf("¿Qué horario desea saber?:\n1)Vespertino \n2)Nocturno \n3)Terminar\n");
+		scanf("%i",&selec);
+		system("clear");
+		switch(selec)
+		{
+		case 1:
+			printf("Costo: %d, globalPrecio_1 \n");
+			printf("Horarios \n");
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
+			break;
+      
+		case 2:
+			printf("Costo: %d, globalPrecio_1 \n");
+			printf("Horarios \n");
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
+			break;
+      
+		case 3:
+			printf("Gracias Por Usar Este Programa 7u7 \n");
+			break;
+		
+		;
+		}
+
+	}while(selec!=3);
+	return 0;
+}
+
+
+case 5:
+		printf("CU a Milpa Alta \n");
+		system("clear");
+		{
+	do
+	{
+		printf("¿Qué horario desea saber?:\n1)Vespertino \n2)Nocturno \n3)Terminar\n");
+		scanf("%i",&selec);
+		system("clear");
+		switch(selec)
+		{
+
+		case 1:
+			printf("Costo: %d, globalPrecio_1 \n");
+			printf("Horarios \n");
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
+			break;
+      
+		case 2:
+			printf("Costo: %d, globalPrecio_1 \n");
+			printf("Horarios \n");
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
+			break;
+      
+		case 3:
+			printf("Gracias Por Usar Este Programa 7u7 \n");
+			break;
+		;
+		}
+
+	}while(selec!=3);
+	return 0;
+  
+}
+
+case 6:
+		printf("CU a Mixquic \n");
+		system("clear");
+		{
+	do
+	{
+		printf("¿Qué horario desea saber?:\n1)Nocturno \n2)Terminar\n");
+		scanf("%i",&selec);
+		system("clear");
+		switch(selec)
+		{
+		case 1:
+			printf("Costo %d, globalPrecio_2\n");
+			printf("Horarios \n");
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
+			break;
+      
+		case 2:
+			printf("Gracias Por Usar Este Programa 7u7 \n");
+			break;
+		
+		;
+		}
+
+	}while(selec!=2);
+	return 0;
+  
+}
+
+case 7:
+		printf("CU A Chalco \n");
+		system("clear");
+		{
+	do
+	{
+		printf("¿Qué horario desea saber?:\n1)Nocturno \n2)Terminar\n");		
+		scanf("%i",&selec);
+		system("clear");
+		switch(selec)
+		{
+		case 1:
+			printf("Costo %d, globalPrecio_3\n");
+			printf("Horarios \n");
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
+			break;
+
+		case 2:
+			printf("Gracias Por Usar Este Programa 7u7 \n");
+			break;
+		;
+		}
+
+	}while(selec!=2);
+	return 0;
+  
+}
+
+case 8:
+		printf("CU a San Pablo \n");
+		system("clear");
+		{
+	do
+	{
+		printf("¿Qué horario desea saber?:\n1)Nocturno \n2)Terminar\n");
+		scanf("%i",&selec);
+		system("clear");
+		switch(selec)
+		{
+		case 1:
+			printf("Costo %d, globalPrecio_2\n");
+			printf("Horarios \n");
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
+			break;;
+
+		case 2:
+			printf("Gracias Por Usar Este Programa 7u7 \n");
+			break;
+		
+		;
+		}
+
+	}while(selec!=2);
+	return 0;
+  
+}
+
+
+case 9:
+		printf("CU a San Bartolo \n");
+		system("clear");
+		{
+	do
+	{
+		printf("¿Qué horario desea saber?:\n 1)Nocturno \n2)Terminar\n");
+		scanf("%i",&selec);
+		system("clear");
+		switch(selec)
+		{
+		case 1:
+			printf("Costo  \n");
+			printf("Horarios \n");
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
+			break;
+      
+		case 2:
+			printf("Gracias Por Usar Este Programa 7u7 \n");
+			break;
+		
+		;
+		}
+
+	}while(selec!=2);
+	return 0;
+  
+}
+
+case 10:
+		printf("CU a San Mateo \n");
+		system("clear");
+		{
+	do
+	{
+		printf("¿Qué horario desea saber?:\n 1)Nocturno \n2)Terminar\n");
+		scanf("%i",&selec);
+		system("clear");
+		switch(selec)
+		{
+		case 1:
+			printf("Costo %d,globalPrecio_4\n");
+			printf("Horarios \n");
+			printf("1) \n2) \n3) \n4) \n5) \n6) \n7) \n8) \n9) \n10) \n");
+			break;
+      
+		case 2:
+			printf("Gracias Por Usar Este Programa 7u7 \n");
+			break;
+		
+		;
+		}
+
+	}while(selec!=2);
+	return 0;
+  
+}
+		break;
+
+		default:
+		printf("Opcion es erronea \n ");
+		break;
+		}
+	}while(opcion !=10);
+	
+	return 0;
+}
