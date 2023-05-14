@@ -4,28 +4,23 @@
 
 #define MAX_LINE_LENGTH 10024
 #define MAX_FIELDS 10
+
 typedef struct  {
     char *Usuario;
     char *Ruta;
     int *Edad;
     }Person;
+
 void generarArray(char *nombreArchivo, char **arregloDeCadenas);
 void makeStruct(Person *persona, char *csvString);
 
-
 void makeStruct(Person *persona, char *csvString){
     char *token = strtok(csvString, ",");
-
-    persona->age= atoi(token);
-
+    persona->Edad= atoi(token);
     token = strtok(NULL, ",");
-
-    persona->name =(char *)malloc((strlen(token) + 1) * sizeof(char));
-    strcpy(persona->name, token);
-
+    persona->Usuario =(char *)malloc((strlen(token) + 1) * sizeof(char));
+    strcpy(persona->Usuario, token);
     token = strtok(NULL, ",");
-    persona->lastName =(char *)malloc((strlen(token) + 1) * sizeof(char));
-    strcpy(persona->lastName, token);
 }
 
 void generarArray(char *nombreArchivo, char **arregloDeCadenas){
@@ -38,7 +33,6 @@ void generarArray(char *nombreArchivo, char **arregloDeCadenas){
         perror("Error al abrir el archivo");
         exit(EXIT_FAILURE);
     }
-
     //fgets
     while (fgets(buffer, MAX_LINE_LENGTH, archivoCsv) != NULL) {
         num_lineas++;
@@ -47,11 +41,8 @@ void generarArray(char *nombreArchivo, char **arregloDeCadenas){
         //reserva el tamaño de la cadena para poder asignarlo y copiar el valor
         arregloDeCadenas[num_lineas]=(char *)malloc((strlen(buffer) + 1) * sizeof(char));
         strcpy(arregloDeCadenas[num_lineas], buffer);
-
     }
-
     fclose(archivoCsv);
-
 }
 
 int main() {
@@ -64,15 +55,9 @@ int main() {
     }
 
     Person persona;
-    
     // makeStruct(persona,array[1]);
-    printf("Name: %s \n",personas[3].name);
-    printf("age: %d \n",personas[3].age);
-    printf("LastName: %s \n",personas[3].lastName);
-
-    
-    
-
+    printf("Name: %s \n",personas[3].Usuario);
+    printf("age: %d \n",personas[3].Edad);
 }
 
 
