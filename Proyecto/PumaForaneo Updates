@@ -4,7 +4,6 @@
 
 #define MAX_LINE_LENGTH 10024
 #define MAX_FIELDS 10
-
 typedef struct  {
     char *name;
     char *lastName;
@@ -57,6 +56,28 @@ void generarArray(char *nombreArchivo, char **arregloDeCadenas){
     fclose(archivoCsv);
 
 }
+
+int main() {
+    Person *personas;
+    char **array;
+    generarArray("sample.csv",array );
+
+    for (int i = 1; i < 4; i++) {
+        makeStruct(&personas[i],array[i+1]);
+    }
+
+    Person persona;
+    
+    // makeStruct(persona,array[1]);
+    printf("Name: %s \n",personas[3].name);
+    printf("age: %d \n",personas[3].age);
+    printf("LastName: %s \n",personas[3].lastName);
+
+    
+    
+
+}
+
 
 int main() {
     Person *personas;
