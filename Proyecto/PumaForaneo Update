@@ -5,12 +5,9 @@
 #define MAX_LINE_LENGTH 10024
 #define MAX_FIELDS 10
 typedef struct  {
-    char *name;
-    char *lastName;
-    char *email;
-    char *gender;
-    char *ip;
-    int age;
+    char *Usuario;
+    char *Ruta;
+    int *Edad;
     }Person;
 void generarArray(char *nombreArchivo, char **arregloDeCadenas);
 void makeStruct(Person *persona, char *csvString);
