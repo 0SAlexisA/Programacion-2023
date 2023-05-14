@@ -2,26 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 
-char globalMaturino_0= ("11:00");
-char globalVespertino_0=("12:00");
-char globalNocturno_0= ("21:00");
-char globalMaturino_1= ("11:15");
-char globalVespertino_1= ("12:15");
-char globalNocturno_1= ("21:15");
-char globalMaturino_2= ("11:30");
-char globalVespertino_2= ("12:30");
-char globalNocturno_2= ("21:30");
-char globalMaturino_3= ("11:45");
-char globalVespertino_3= ("12:45");
-char globalNocturno_3= ("21:45");
-char globalVespertino_4= ("13:00");
-char globalNocturno_4= ("22:00");
-
-	int globalPrecio_0= 22;	//Se repite:1 En la ruta:Xochimilco
-  int globalPrecio_1= 32;	//Se repite:3 En la ruta:Tulyehualco,Tlahuac,Milpa Alta
-  int globalPrecio_2= 34;	//Se repite:2 En la ruta:Mixquic, San pablo
-	int globalPrecio_3= 45;	//Se repite:1 En la ruta:Chalco
-  int globalPrecio_4= 30;	//Se repite:1	 En la ruta:San Mateo
+int globalPrecio_0= 22;	//Se repite:1 En la ruta:Xochimilco
+int globalPrecio_1= 32;	//Se repite:3 En la ruta:Tulyehualco,Tlahuac,Milpa Alta
+int globalPrecio_2= 34;	//Se repite:2 En la ruta:Mixquic, San pablo
+int globalPrecio_3= 45;	//Se repite:1 En la ruta:Chalco
+int globalPrecio_4= 30;	//Se repite:1	 En la ruta:San Mateo
 
 
 int main(void) {
