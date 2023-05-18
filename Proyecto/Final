@@ -43,8 +43,9 @@ int main(void) {
 
 				printf("\n¡Bienvenido! a Puma Foraneo\n");
 				printf("\nSeleccione su estado");
-				printf("\n 1) Registro \n"); //Registra los datos para el archivo cvs
-				printf("\n 2) Iniciar \n"); //Dirige al menú principal del pumabus fornaeo
+				printf("\n 1) Terminar "); //Registra los datos para el archivo cvs
+				printf("\n 2) Registro "); //Dirige al menú principal del pumabus fornaeo
+				printf("\n 3) Iniciar \n"); //Dirige al menú principal del pumabus fornaeo
 					scanf("%d",&opcion);
    				 	switch(opcion){
      				system("cls");
@@ -52,6 +53,11 @@ int main(void) {
 //introducir datos para crear el archivo csv de la informacion del usuario
 
 case 1:
+			printf("\n Gracias Por Usar Puma Foraneo 7u7 \n");
+                break;
+
+
+case 2:
   	    printf("\nIntroduce tu nombre de usuario:\n");
         	scanf("%s", &nombre);
 
@@ -71,7 +77,7 @@ case 1:
 //Puede seleccionar el horario que desee consultar.
 //Con la ruta seleccionada podra consultar los siguentes datos: precio, horario que seleccione el usuario
 
-case 2:
+case 3:
 				do{
 			printf("\nMenu Principal\n");  
 			printf("\nSelecciona la ruta\n1)CU a Xochimilco \n2)CU a Deportiva Sta.Cruz \n3)CU a Tulyehualco \n4)CU a Tlahuac \n5)CU a Milpa Alta \n6)CU a Mixquic \n7)CU A Chalco \n8)CU a San Pablo \n9)CU a San Bartolo \n10)CU a San Mateo\n");
