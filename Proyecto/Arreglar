@@ -27,14 +27,14 @@ int main(void) {
     
   char nombre[50];
   char email[50];
-	int opcion;
+  int opcion;
   int selec;
 
-				do{
-			printf("\n¡Bienvenido! a Puma Foraneo\n");
-	    printf("\nIntroduce tu nombre de usuario:\n");
+	do{
+printf("\n¡Bienvenido! a Puma Foraneo\n");
+printf("\nIntroduce tu nombre de usuario:\n");
         scanf("%s", nombre);
-      printf("\nIntroduce el email del usuario:\n");
+printf("\nIntroduce el email del usuario:\n");
         scanf("%s", email);
         		agregar_usuario(nombre, email);
 
