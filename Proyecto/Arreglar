@@ -27,25 +27,37 @@ int main(void) {
     
   char nombre[50];
   char email[50];
-  int opcion;
+	int opcion;
   int selec;
 
-	do{
-printf("\n¡Bienvenido! a Puma Foraneo\n");
-printf("\nIntroduce tu nombre de usuario:\n");
-        scanf("%s", nombre);
-printf("\nIntroduce el email del usuario:\n");
-        scanf("%s", email);
-        		agregar_usuario(nombre, email);
+//If else
+//Tambien tenemos que mover los datos para que sean variables globales
+//Y sacarlos del main
 
-	
+			printf("\n¡Bienvenido! a Puma Foraneo\n");
+			printf("\nSeleccione su estado");
+			printf("\n 1) Registro \n");
+			printf("\n 2) Iniciar \n");
+			scanf("%d",&opcion);
+    	switch(opcion){
+      system("cls");
+
+case 1:
+  	    printf("\nIntroduce tu nombre de usuario:\n");
+        	scanf("%s", nombre);
+        printf("\nIntroduce el email del usuario:\n");
+       		scanf("%s", email);
+        agregar_usuario(nombre, email);
+  					system("cls");
+            
+case 2:
+				do{
 			printf("\nMenu Principal\n");
 			printf("\nSelecciona la ruta\n1)CU a Xochimilco \n2)CU a Deportiva Sta.Cruz \n3)CU a Tulyehualco \n4)CU a Tlahuac \n5)CU a Milpa Alta \n6)CU a Mixquic \n7)CU A Chalco \n8)CU a San Pablo \n9)CU a San Bartolo \n10)CU a San Mateo\n");
 			printf("\nSelecciona una opcion:\n");
 				scanf("%d",&opcion);
-		
     			switch(opcion){
-        
+        	system("cls");
 case 1:
       printf("\nSeleccionaste:CU a Xochimilco \n");
        system("cls"); { 
@@ -92,13 +104,13 @@ case 2:
 				switch(selec){
 		
     case 1:
-				printf("Costo: \n");
+				printf("Costo %d, globalPrecio_2\n");
 				printf("Horarios \n");
 				printf("1)%s \n2)%s \n3)%s \n", globalVespertino[5], globalVespertino[9], globalVespertino[39]);
 					break;
       
 		case 2:
-				printf("Costo \n");
+				printf("Costo %d, globalPrecio_2\n");
 				printf("Horarios \n");
 				printf("1)%s \n2)%s \n", globalNocturno[3], globalNocturno[7]);
 					break;
@@ -298,7 +310,7 @@ case 9:
 		    switch(selec){
         
 		case 1:
-			printf("Costo  \n");
+			printf("Costo %d, globalPrecio_2\n");
 			printf("Horarios \n");
 			printf("1)%s \n", globalNocturno[10]);
 				break;
@@ -349,4 +361,6 @@ case 10:
 	}while(opcion !=10);
 
 	return 0;
+}
+
 }
