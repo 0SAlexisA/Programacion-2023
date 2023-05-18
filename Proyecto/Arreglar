@@ -4,16 +4,21 @@
 #define MAX_LINE_LENGTH 10024
 #define MAX_FIELDS 10
 
+//Crea un archivo cvs con la siguente información del usuario: nombre,email,facultad ,edad
 
-    void agregar_usuario(char *nombre, char *email) {
+//Datos que contiene el archivo cvs
+//La linea 11 realiza tal
+    void agregar_usuario(char *nombre, char *email, char *facultad, int *edad) {
     FILE *archivo;
     archivo = fopen("usuarios.csv", "a");
-    fprintf(archivo, "%s,%s\n",nombre, email);
+   fprintf(archivo, "%s,%s,%s,%d\n",nombre, email, facultad, edad); 
     fclose(archivo);
     }
 
 
 int main(void) {
+
+//varibles globales: horarios y precios
 
 	char *globalMaturino[]= {"11:00", "11:15", "11:30", "11:45"};
 	char *globalVespertino[]= {"12:00", "12:15", "12:30", "12:45", "13:00", "13:15", "13:35", "13:45", "14:00", "14:10", "14:20", "14:40", "14:45", "15:00", "15:10", "15:20", "15:30", "15:45", "16:00", "16:10", "16:20", "16:30", "16:40", "16:50", "17:00", "17:10", "17:20", "17:30", "17:40", "17:50", "18:00", "18:10", "18:20", "18:30", "18:40", "18:50", "19:00", "19:10", "19:20", "19:30", "19:40", "19:50"};
@@ -25,41 +30,57 @@ int main(void) {
 	int globalPrecio_3= 45;	//Se repite:1 En la ruta:Chalco
 	int globalPrecio_4= 30;	//Se repite:1 En la ruta:San Mateo
     
+//Declarión de variables
+    
   char nombre[50];
   char email[50];
+  char facultad[50];
+  int edad ;
 	int opcion;
   int selec;
+  
+//menú para seleccionar registro o iniciar con la consulta de los pumabuses foraneos
 
-//If else
-//Tambien tenemos que mover los datos para que sean variables globales
-//Y sacarlos del main
-
-			printf("\n¡Bienvenido! a Puma Foraneo\n");
-			printf("\nSeleccione su estado");
-			printf("\n 1) Registro \n");
-			printf("\n 2) Iniciar \n");
-			scanf("%d",&opcion);
-    	switch(opcion){
-      system("cls");
+				printf("\n¡Bienvenido! a Puma Foraneo\n");
+				printf("\nSeleccione su estado");
+				printf("\n 1) Registro \n"); //Registra los datos para el archivo cvs
+				printf("\n 2) Iniciar \n"); //Dirige al menú principal del pumabus fornaeo
+					scanf("%d",&opcion);
+   				 	switch(opcion){
+     				system("cls");
+            
+//introducir datos para crear el archivo csv de la informacion del usuario
 
 case 1:
   	    printf("\nIntroduce tu nombre de usuario:\n");
-        	scanf("%s", nombre);
+        	scanf("%s", &nombre);
+
         printf("\nIntroduce el email del usuario:\n");
-       		scanf("%s", email);
-        agregar_usuario(nombre, email);
-  					system("cls");
-            
+       		scanf("%s", &email);
+
+        printf("\nIntroduce tu Facultad:\n");
+       		scanf("%s", &facultad);
+
+				printf("\nIntroduce tu edad:\n");
+       		scanf("%d", &edad);
+
+        agregar_usuario(nombre, email, facultad, edad);
+
+//menu donde muestra las rutas del pumabus Foraneo
+//linea 75 Selecciona una opción y lo dirige al usuario a su opcion seleccionada
+//Puede seleccionar el horario que desee consultar.
+//Con la ruta seleccionada podra consultar los siguentes datos: precio, horario que seleccione el usuario
+
 case 2:
 				do{
-			printf("\nMenu Principal\n");
+			printf("\nMenu Principal\n");  
 			printf("\nSelecciona la ruta\n1)CU a Xochimilco \n2)CU a Deportiva Sta.Cruz \n3)CU a Tulyehualco \n4)CU a Tlahuac \n5)CU a Milpa Alta \n6)CU a Mixquic \n7)CU A Chalco \n8)CU a San Pablo \n9)CU a San Bartolo \n10)CU a San Mateo\n");
-			printf("\nSelecciona una opcion:\n");
+			printf("\nSelecciona una opcion:\n"); 
 				scanf("%d",&opcion);
     			switch(opcion){
         	system("cls");
 case 1:
-      printf("\nSeleccionaste:CU a Xochimilco \n");
+      printf("\nSeleccionaste:CU a Xochimilco \n"); 
        system("cls"); { 
         do {
 	   	printf("\nQue  horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n\n");
