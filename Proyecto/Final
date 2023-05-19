@@ -1,21 +1,40 @@
+/*
+@date <19-05-2023>
+@author 
+@Cruz López Juan Manuel
+@Santiago Avila Alexis Iván
+@Santillan Osorio Ada Paulina
+@Vazquez Alvarez Osvaldo
+@version <Final>
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 // Definición de constantes
 #define MAX_LINE_LENGTH 10024
 #define MAX_FIELDS 10
 
 /*
 *Crea un archivo cvs con la siguentes parametros del usuario: 
-*Nombre del usuario
-*Email del usuario
-*Facultad del usuario
-*Edad del usuario
+@ param Nombre del usuario
+@ param Email del usuario
+@ param Facultad del usuario
+@ param Edad del usuario
 */
-//linea 15 define una funcion llamada "agregar_usuario", con sus parametros nombre, email,facultad,edad
-//linea 18 se utiliza una funcion fopen para poder abrir el archivo csv llamado "usuarios"
+
+/*
+@name agregar usuario
+@ param Nombre del usuario
+@ param Email del usuario
+@ param Facultad del usuario
+@ param Edad del usuario
+*/
+
+//@name fopen: para poder abrir el archivo csv llamado "usuarios"
 //La "a" significa que se creara un archivo nuevo y se escribira sin remplazar o eliminar lo que se escribio
-//funcion fclose se cierra el archivo y se aguardan 
+//@name fclose se cierra el archivo y se aguardan 
 
     void agregar_usuario(char *nombre, char *email, char *facultad, int *edad) {
     FILE *archivo;
