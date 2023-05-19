@@ -1,13 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+// Definición de constantes
 #define MAX_LINE_LENGTH 10024
 #define MAX_FIELDS 10
 
-//Crea un archivo cvs con la siguente información del usuario: nombre,email,facultad ,edad
+/*
+*Crea un archivo cvs con la siguentes parametros del usuario: 
+*Nombre del usuario
+*Email del usuario
+*Facultad del usuario
+*Edad del usuario
+*/
+//linea 15 define una funcion llamada "agregar_usuario", con sus parametros nombre, email,facultad,edad
+//linea 18 se utiliza una funcion fopen para poder abrir el archivo csv llamado "usuarios"
+//La "a" significa que se creara un archivo nuevo y se escribira sin remplazar o eliminar lo que se escribio
+//funcion fclose se cierra el archivo y se aguardan 
 
-//Datos que contiene el archivo cvs
-//La linea 11 realiza tal
     void agregar_usuario(char *nombre, char *email, char *facultad, int *edad) {
     FILE *archivo;
     archivo = fopen("usuarios.csv", "a");
@@ -50,13 +59,12 @@ int main(void) {
    				 	switch(opcion){
      				system("cls");
             
-//introducir datos para crear el archivo csv de la informacion del usuario
 
 case 1:
 			printf("\n Gracias Por Usar Puma Foraneo 7u7 \n");
                 break;
 
-
+//introducir datos para crear el archivo csv de la informacion del usuario
 case 2:
   	    printf("\nIntroduce tu nombre de usuario:\n");
         	scanf("%s", &nombre);
@@ -85,6 +93,10 @@ case 3:
 				scanf("%d",&opcion);
     			switch(opcion){
         	system("cls");
+		
+// si selecciona la opcion 1 le mostrara 3 opciones de los horarios [Matutino, vespertino , nocturno]
+//el usuario seleccionara una opcion de horario: le mostrara el horario que selecciono y el costo 
+
 case 1:
       printf("\nSeleccionaste:CU a Xochimilco \n"); 
        system("cls"); { 
@@ -120,6 +132,9 @@ case 1:
 	return 0;
 }
 					break;
+					
+// si selecciona la opcion 2 le mostrara 2 opciones de los horarios [ vespertino , nocturno]
+//el usuario seleccionara una opcion de horario: le mostrara el horario que selecciono y el costo 
 
 case 2:
 			printf("\nSeleccionaste:CU a Deportiva Sta.Cruz \n");
@@ -150,6 +165,9 @@ case 2:
 	}while(selec!=3);
 	return 0;
 }
+
+// si selecciona la opcion 3 le mostrara 2 opciones de los horarios [ vespertino , nocturno]
+//el usuario seleccionara una opcion: le mostrara el horario que selecciono y el costo 
 
 case 3:
 			printf("\nSeleccionaste:CU a Tulyehualco \n");
@@ -182,6 +200,9 @@ case 3:
 	return 0;
 }
 
+// si selecciona la opcion 4 le mostrara 2 opciones de los horarios [ vespertino , nocturno]
+//el usuario seleccionara una opcion: le mostrara el horario que selecciono y el costo 
+
 case 4:
 			printf("\nSeleccionaste:CU a Tlahuac \n");
 				system("cls"); {
@@ -213,6 +234,8 @@ case 4:
 	return 0;
 }
 
+// si selecciona la opcion 5 le mostrara 2 opciones de los horarios [ vespertino , nocturno]
+//el usuario seleccionara una opcion: le mostrara el horario que selecciono y el costo 
 
 case 5:
 			printf("\nSeleccionaste:CU a Milpa Alta \n");
@@ -246,6 +269,9 @@ case 5:
   
 }
 
+// si selecciona la opcion 6 le mostrara 2 opciones de los horarios [ vespertino , nocturno]
+//el usuario seleccionara una opcion: le mostrara el horario que selecciono y el costo 
+
 case 6:
 			printf("\nSeleccionaste:CU a Mixquic \n");
 				system("cls"); {
@@ -271,6 +297,9 @@ case 6:
 	return 0;
   
 }
+
+// si selecciona la opcion 7 le mostrara 2 opciones de los horarios [ vespertino , nocturno]
+//el usuario seleccionara una opcion: le mostrara el horario que selecciono y el costo 
 
 case 7:
 			printf("\nSeleccionaste:CU A Chalco \n");
@@ -299,6 +328,9 @@ case 7:
   
 }
 
+// si selecciona la opcion 8 le mostrara 2 opciones de los horarios [ vespertino , nocturno]
+//el usuario seleccionara una opcion: le mostrara el horario que selecciono y el costo 
+
 case 8:
 		 printf("\nSeleccionaste:CU a San Pablo \n");
 		 		system("cls"); {
@@ -325,6 +357,8 @@ case 8:
   
 }
 
+// si selecciona la opcion 9 le mostrara 2 opciones de los horarios [ vespertino , nocturno]
+//el usuario seleccionara una opcion: le mostrara el horario que selecciono y el costo 
 
 case 9:
 			printf("\nSeleccionaste:CU a San Bartolo \n");
@@ -352,6 +386,8 @@ case 9:
 	return 0;
   
 }
+// si selecciona la opcion 10 le mostrara 2 opciones de los horarios [ vespertino , nocturno]
+//el usuario seleccionara una opcion: le mostrara el horario que selecciono y el costo 
 
 case 10:
 		printf("\nSeleccionaste:CU a San Mateo \n");
@@ -380,7 +416,7 @@ case 10:
   
 }
 		break;
-
+//opcion invalida
 		default:
 		printf("Opcion es erronea \n ");
 		break;
