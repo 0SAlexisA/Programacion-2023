@@ -1,19 +1,52 @@
+/*
+@date <19-05-2023>
+@author 
+@Cruz López Juan Manuel
+@Santiago Avila Alexis Iván
+@Santillan Osorio Ada Paulina
+@Vazquez Alvarez Osvaldo
+@version <Final>
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
+// Definición de constantes
 #define MAX_LINE_LENGTH 10024
 #define MAX_FIELDS 10
 
-    void agregar_usuario(char *nombre, char *email) {
+/*
+*Crea un archivo cvs con la siguentes parametros del usuario: 
+@ param Nombre del usuario
+@ param Email del usuario
+@ param Facultad del usuario
+@ param Edad del usuario
+*/
+
+/*
+@name agregar usuario
+@ param Nombre del usuario
+@ param Email del usuario
+@ param Facultad del usuario
+@ param Edad del usuario
+*/
+
+//@name fopen: para poder abrir el archivo csv llamado "usuarios"
+//La "a" significa que se creara un archivo nuevo y se escribira sin remplazar o eliminar lo que se escribio
+//@name fclose se cierra el archivo y se aguardan 
+
+    void agregar_usuario(char *nombre, char *email, char *facultad, int *edad) {
     FILE *archivo;
     archivo = fopen("usuarios.csv", "a");
-    fprintf(archivo, "%s,%s\n",nombre, email);
+   fprintf(archivo, "%s,%s,%s,%d\n",nombre, email, facultad, edad); 
     fclose(archivo);
     }
 
 
 int main(void) {
+
+//varibles globales: horarios y precios
 
 	char *globalMaturino[]= {"11:00", "11:15", "11:30", "11:45"};
 	char *globalVespertino[]= {"12:00", "12:15", "12:30", "12:45", "13:00", "13:15", "13:35", "13:45", "14:00", "14:10", "14:20", "14:40", "14:45", "15:00", "15:10", "15:20", "15:30", "15:45", "16:00", "16:10", "16:20", "16:30", "16:40", "16:50", "17:00", "17:10", "17:20", "17:30", "17:40", "17:50", "18:00", "18:10", "18:20", "18:30", "18:40", "18:50", "19:00", "19:10", "19:20", "19:30", "19:40", "19:50"};
@@ -25,289 +58,317 @@ int main(void) {
 	int globalPrecio_3= 45;	//Se repite:1 En la ruta:Chalco
 	int globalPrecio_4= 30;	//Se repite:1 En la ruta:San Mateo
     
-    char nombre[50];
-    char email[50];
-
+//Declarión de variables
+    
+  char nombre[50];
+  char email[50];
+  char facultad[50];
+  int edad ;
 	int opcion;
-    int selec;
+  int selec;
+  
+//menú para seleccionar registro o iniciar con la consulta de los pumabuses foraneos
 
-	do{
-	printf("\n¡Bienvenido! a Puma Foraneo\n");
-	
-	    printf("\nIntroduce tu nombre de usuario:\n");
-        scanf("%s", nombre);
-        printf("\nIntroduce el email del usuario:\n");
-        scanf("%s", email);
-        agregar_usuario(nombre, email);
+				printf("\n¡Bienvenido! a Puma Foraneo\n");
+				printf("\nSeleccione su estado");
+				printf("\n 1) Terminar "); //Registra los datos para el archivo cvs
+				printf("\n 2) Registro "); //Dirige al menú principal del pumabus fornaeo
+				printf("\n 3) Iniciar \n"); //Dirige al menú principal del pumabus fornaeo
+					scanf("%d",&opcion);
+   				 	switch(opcion){
+     				system("clear");
+            
 
-	
-	printf("\nMenu Principal\n");
-	printf("\nSelecciona la ruta\n1)CU a Xochimilco \n2)CU a Deportiva Sta.Cruz \n3)CU a Tulyehualco \n4)CU a Tlahuac \n5)CU a Milpa Alta \n6)CU a Mixquic \n7)CU A Chalco \n8)CU a San Pablo \n9)CU a San Bartolo \n10)CU a San Mateo\n");
-	printf("\nSelecciona una opcion:\n");
-		scanf("%d",&opcion);
-		
-    switch(opcion){
-        
 case 1:
-       printf("\nSeleccionaste:CU a Xochimilco \n");
-       system("cls");
-	     	{
-        do
-    {
-	   printf("\nQue  horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n\n");
-	   scanf("%i",&selec);
-	   system("cls");
-	   switch(selec)
-		{
-		case 1:
-		    printf("Costo:$%d\n", globalPrecio_0);
-		    printf("\nHorarios \n");
-			printf("Horario: %s\n", globalMaturino[selec - 1]);
-		    break;
+			printf("\n Gracias Por Usar Puma Foraneo 7u7 \n");
+                break;
+
+//introducir datos para crear el archivo csv de la informacion del usuario
+case 2:
+  	    printf("\nIntroduce tu nombre de usuario:\n");
+        	scanf("%s", &nombre);
+
+        printf("\nIntroduce el email del usuario:\n");
+       		scanf("%s", &email);
+
+        printf("\nIntroduce tu Facultad:\n");
+       		scanf("%s", &facultad);
+
+				printf("\nIntroduce tu edad:\n");
+       		scanf("%d", &edad);
+
+        agregar_usuario(nombre, email, facultad, edad);
+
+//menu donde muestra las rutas del pumabus Foraneo
+//Selecciona una opción y lo dirige al usuario a su opcion seleccionada
+//Puede seleccionar el horario que desee consultar.
+//Con la ruta seleccionada podra consultar los siguentes datos: precio, horario que seleccione el usuario
+
+case 3:
+				do{
+			printf("\nMenu Principal\n");  
+			printf("\nSelecciona la ruta\n1)CU a Xochimilco \n2)CU a Deportiva Sta.Cruz \n3)CU a Tulyehualco \n4)CU a Tlahuac \n5)CU a Milpa Alta \n6)CU a Mixquic \n7)CU A Chalco \n8)CU a San Pablo \n9)CU a San Bartolo \n10)CU a San Mateo\n");
+			printf("\nSelecciona una opcion:\n"); 
+				scanf("%d",&opcion);
+    			switch(opcion){
+        	system("clear");
+		
+// si selecciona la opcion 1 le mostrara 3 opciones de los horarios [Matutino, vespertino , nocturno]
+//el usuario seleccionara una opcion de horario: le mostrara el horario que selecciono y el costo 
+
+case 1:
+      printf("\nSeleccionaste:CU a Xochimilco \n"); 
+       system("clear"); { 
+        do {
+	   	printf("\nQue  horario desea saber?:\n1)Matutino \n2)Vespertino \n3)Nocturno \n4)Terminar\n\n");
+	   		scanf("%i",&selec);
+	   		system("clear");
+	   			switch(selec){
+	
+  	case 1:
+		  printf("Costo:$%d\n", globalPrecio_0);
+		  printf("\nHorarios \n");
+			printf("1)%s \n2)%s \n3)%s \n4)%s \n", globalMaturino[0], globalMaturino[1], globalMaturino[2], globalMaturino[3]);
+		    	break;
       
 		case 2:
 			printf("Costo:$%d\n", globalPrecio_0);
 			printf("\nHorarios: \n");
-			printf("Horario: %s\n", globalVespertino[selec - 1]);
-			break;
+			printf("1)%s \n2)%s \n3)%s \n4)%s \n5)%s \n6)%s \n7)%s \n8)%s \n9)%s \n10)%s \n11)%s \n12)%s \n13)%s \n14)%s \n15)%s \n16)%s \n17)%s \n18)%s \n19)%s \n20)%s \n21)%s \n22)%s \n23)%s \n24)%s \n25)%s \n26)%s \n27)%s \n28)%s \n29)%s \n30)%s \n31)%s \n32)%s \n33)%s \n34)%s \n35)%s \n36)%s \n37)%s \n38)%s \n", globalVespertino[0], globalVespertino[1], globalVespertino[2], globalVespertino[3], globalVespertino[4], globalVespertino[6], globalVespertino[7], globalVespertino[8], globalVespertino[9], globalVespertino[10], globalVespertino[11], globalVespertino[12], globalVespertino[13], globalVespertino[14], globalVespertino[15], globalVespertino[16], globalVespertino[17], globalVespertino[18], globalVespertino[19], globalVespertino[20], globalVespertino[21], globalVespertino[22], globalVespertino[23], globalVespertino[24], globalVespertino[25], globalVespertino[26], globalVespertino[27], globalVespertino[28], globalVespertino[29], globalVespertino[30], globalVespertino[31], globalVespertino[32], globalVespertino[33], globalVespertino[34], globalVespertino[35], globalVespertino[36], globalVespertino[37], globalVespertino[38]);
+					break;
       
 		case 3:
 			printf("Costo:$%d\n", globalPrecio_0);
 			printf("Horarios: \n");
-			printf("Horario: %s\n", globalNocturno[selec - 1]);
-			break;
+			printf("1)%s \n2)%s \n3)%s \n4)%s \n5)%s \n6)%s \n7)%s \n8)%s \n9)%s \n10)%s \n", globalNocturno[1], globalNocturno[2], globalNocturno[3], globalNocturno[4], globalNocturno[5], globalNocturno[6], globalNocturno[7], globalNocturno[8], globalNocturno[9], globalNocturno[10]);
+					break;
       
 		case 4:
 			printf("Gracias Por Usar Puma Foraneo 7u7 \n");
-			break;
-      
-		;
+					break;
 		}
-
 	}while(selec!=4);
 	return 0;
 }
-		break;
+					break;
+					
+// si selecciona la opcion 2 le mostrara 2 opciones de los horarios [ vespertino , nocturno]
+//el usuario seleccionara una opcion de horario: le mostrara el horario que selecciono y el costo 
 
 case 2:
-		printf("\nSeleccionaste:CU a Deportiva Sta.Cruz \n");
-		system("cls");
-		{
-	do
-	{
-		printf("\nQue  horario desea saber?:\n1)Vespertino \n2)Nocturno \n3)Terminar\n");
-		scanf("%i",&selec);
-		system("cls");
-		switch(selec)
-		{
-		case 1:
-			printf("Costo: \n");
-			printf("Horarios \n");
-			printf("Horario: %s\n", globalVespertino[selec - 1]);
-			break;
+			printf("\nSeleccionaste:CU a Deportiva Sta.Cruz \n");
+				system("clear"); {
+					do{
+			printf("Que horario desea saber?:\n1)Vespertino \n2)Nocturno \n3)Terminar\n");
+				scanf("%i",&selec);
+				system("cls");
+				switch(selec){
+		
+    case 1:
+				printf("Costo %d", globalPrecio_2);
+				printf("Horarios \n");
+				printf("1)%s \n2)%s \n3)%s \n", globalVespertino[5], globalVespertino[9], globalVespertino[39]);
+					break;
       
 		case 2:
-			printf("Costo \n");
-			printf("Horarios \n");
-			printf("Horario: %s\n", globalNocturno[selec - 1]);
-			break;
-      
+				printf("Costo %d", globalPrecio_2);
+				printf("Horarios \n");
+				printf("1)%s \n2)%s \n", globalNocturno[3], globalNocturno[7]);
+					break;
       
 		case 3:
-			printf("Gracias Por Usar Puma Foraneo 7u7 \n");
-			break;
-      
-		
-		;
+				printf("Gracias Por Usar Puma Foraneo 7u7 \n");
+					break;
 		}
 
 	}while(selec!=3);
 	return 0;
 }
 
+// si selecciona la opcion 3 le mostrara 2 opciones de los horarios [ vespertino , nocturno]
+//el usuario seleccionara una opcion: le mostrara el horario que selecciono y el costo 
+
 case 3:
-		printf("\nSeleccionaste:CU a Tulyehualco \n");
-		system("cls");
-		{
-	do
-	{
-		printf(" Qu  horario desea saber?:\n1)Vespertino \n2)Nocturno \n3)Terminar\n");
-		scanf("%i",&selec);
-		system("cls");
-		switch(selec)
-		{
+			printf("\nSeleccionaste:CU a Tulyehualco \n");
+				system("clear"); {
+					do{
+      
+			printf(" Qu  horario desea saber?:\n1)Vespertino \n2)Nocturno \n3)Terminar\n");
+				scanf("%i",&selec);
+				system("cls");
+				switch(selec){
+        
+		case 1:
+			printf("Costo:$%d\n", globalPrecio_1);
+			printf("Horarios \n");
+			printf("1)%s \n2)%s \n3)%s \n4)%s \n", globalVespertino[5], globalVespertino[12], globalVespertino[16], globalVespertino[35]);
+				break;
+      
+		case 2:
+			printf("Costo:$%d\n", globalPrecio_1);
+			printf("Horarios \n");
+			printf("1)%s \n2)%s \n", globalNocturno[5], globalNocturno[9]);
+				break;
+      
+		case 3:
+			printf("Gracias Por Usar Puma Foraneo 7u7 \n");
+				break;
+		}
+
+	}while(selec!=3);
+	return 0;
+}
+
+// si selecciona la opcion 4 le mostrara 2 opciones de los horarios [ vespertino , nocturno]
+//el usuario seleccionara una opcion: le mostrara el horario que selecciono y el costo 
+
+case 4:
+			printf("\nSeleccionaste:CU a Tlahuac \n");
+				system("clear"); {
+				do{
+        
+			printf(" Que  horario desea saber?:\n1)Vespertino \n2)Nocturno \n3)Terminar\n");
+				scanf("%i",&selec);
+				system("clear");
+				switch(selec){
+	
+  	case 1:
+			printf("Costo:$%d\n", globalPrecio_1 );
+			printf("Horarios \n");
+			printf("1)%s \n2)%s \n", globalVespertino[5], globalVespertino[14]);
+				break;
+      
+		case 2:
+			printf("Costo:$%d\n", globalPrecio_1 );
+			printf("Horarios \n");
+			printf("1)%s \n2)&s \n", globalNocturno[3], globalNocturno[9]);
+				break;
+      
+		case 3:
+			printf("Gracias Por Usar Puma Foraneo 7u7 \n");
+				break;
+		}
+
+	}while(selec!=3);
+	return 0;
+}
+
+// si selecciona la opcion 5 le mostrara 2 opciones de los horarios [ vespertino , nocturno]
+//el usuario seleccionara una opcion: le mostrara el horario que selecciono y el costo 
+
+case 5:
+			printf("\nSeleccionaste:CU a Milpa Alta \n");
+				system("clear"); {
+				do{
+
+			printf("\nQue  horario desea saber?:\n1)Vespertino \n2)Nocturno \n3)Terminar\n");
+				scanf("%i",&selec);
+				system("clear");
+				switch(selec){
+
 		case 1:
 			printf("Costo:$%d\n", globalPrecio_1 );
 			printf("Horarios \n");
-			printf("Horario: %s\n", globalVespertino[selec - 1]);
-			break;
+			printf("1)%s \n2)%s \n3)%s \n", globalVespertino[9], globalVespertino[15], globalVespertino[39]);
+				break;
       
 		case 2:
-			printf("Costo: %d, globalPrecio_1 \n");
+			printf("Costo:$%d\n", globalPrecio_1 );
 			printf("Horarios \n");
-			printf("Horario: %s\n", globalNocturno[selec - 1]);
-			break;
+			printf("1)%s \n2)%s \n", globalNocturno[3], globalNocturno[7]);
+				break;
       
 		case 3:
 			printf("Gracias Por Usar Puma Foraneo 7u7 \n");
-			break;
-		
-		;
-		}
-
-	}while(selec!=3);
-	return 0;
-}
-
-case 4:
-		printf("\nSeleccionaste:CU a Tlahuac \n");
-		system("cls");
-		{
-	do
-	{
-		printf(" Que  horario desea saber?:\n1)Vespertino \n2)Nocturno \n3)Terminar\n");
-		scanf("%i",&selec);
-		system("cls");
-		switch(selec)
-		{
-		case 1:
-			printf("Costo: %d, globalPrecio_1 \n");
-			printf("Horarios \n");
-			printf("Horario: %s\n", globalVespertino[selec - 1]);
-			break;
-      
-		case 2:
-			printf("Costo: %d, globalPrecio_1 \n");
-			printf("Horarios \n");
-			printf("Horario: %s\n", globalNocturno[selec - 1]);
-			break;
-      
-		case 3:
-			printf("Gracias Por Usar Puma Foraneo 7u7 \n");
-			break;
-		
-		;
-		}
-
-	}while(selec!=3);
-	return 0;
-}
-
-
-case 5:
-		printf("\nSeleccionaste:CU a Milpa Alta \n");
-		system("cls");
-		{
-	do
-	{
-		printf("\nQue  horario desea saber?:\n1)Vespertino \n2)Nocturno \n3)Terminar\n");
-		scanf("%i",&selec);
-		system("cls");
-		switch(selec)
-		{
-
-		case 1:
-			printf("Costo: %d, globalPrecio_1 \n");
-			printf("Horarios \n");
-			printf("Horario: %s\n", globalVespertino[selec - 1]);
-			break;
-      
-		case 2:
-			printf("Costo: %d, globalPrecio_1 \n");
-			printf("Horarios \n");
-			printf("Horario: %s\n", globalNocturno[selec - 1]);
-			break;
-      
-		case 3:
-			printf("Gracias Por Usar Puma Foraneo 7u7 \n");
-			break;
-		;
+				break;
 		}
 
 	}while(selec!=3);
 	return 0;
   
 }
+
+// si selecciona la opcion 6 le mostrara 2 opciones de los horarios [ vespertino , nocturno]
+//el usuario seleccionara una opcion: le mostrara el horario que selecciono y el costo 
 
 case 6:
-		printf("\nSeleccionaste:CU a Mixquic \n");
-		system("cls");
-		{
-	do
-	{
-		printf(" \nQue  horario desea saber?:\n1)Nocturno \n2)Terminar\n");
-		scanf("%i",&selec);
-		system("cls");
-		switch(selec)
-		{
+			printf("\nSeleccionaste:CU a Mixquic \n");
+				system("clear"); {
+				do{
+			printf(" \nQue  horario desea saber?:\n1)Nocturno \n2)Terminar\n");
+				scanf("%i",&selec);
+				system("clear");
+				switch(selec){
+        
 		case 1:
-			printf("Costo %d, globalPrecio_2\n");
+			printf("Costo:$%d\n", globalPrecio_2);
 			printf("Horarios \n");
-			printf("Horario: %s\n", globalNocturno[selec - 1]);
-			break;
+			printf("1)%s \n", globalNocturno[0]);
+				break;
       
 		case 2:
 			printf("Gracias Por Usar Puma Foraneo 7u7 \n");
-			break;
-		
-		;
+				break;
+	
 		}
 
 	}while(selec!=2);
 	return 0;
   
 }
+
+// si selecciona la opcion 7 le mostrara 2 opciones de los horarios [ vespertino , nocturno]
+//el usuario seleccionara una opcion: le mostrara el horario que selecciono y el costo 
 
 case 7:
-		printf("\nSeleccionaste:CU A Chalco \n");
-		system("cls");
-		{
-	do
-	{
-		printf("\nQue horario desea saber?:\n1)Nocturno \n2)Terminar\n");		
-		scanf("%i",&selec);
-		system("cls");
-		switch(selec)
-		{
+			printf("\nSeleccionaste:CU A Chalco \n");
+				system("clear"); {
+				do{
+		
+    	printf("\nQue horario desea saber?:\n1)Nocturno \n2)Terminar\n");		
+				scanf("%i",&selec);
+				system("clear");
+				switch(selec){
+    
 		case 1:
-			printf("Costo %d, globalPrecio_3\n");
+			printf("Costo:$%d\n", globalPrecio_3);
 			printf("Horarios \n");
-			printf("Horario: %s\n", globalNocturno[selec - 1]);
-			break;
+			printf("1)%s \n2)%s \n", globalNocturno[3], globalNocturno[10]);
+				break;
 
 		case 2:
 			printf("Gracias Por Usar Puma Foraneo 7u7 \n");
-			break;
-		;
-		}
+				break;
+		
+    }
 
 	}while(selec!=2);
 	return 0;
   
 }
+
+// si selecciona la opcion 8 le mostrara 2 opciones de los horarios [ vespertino , nocturno]
+//el usuario seleccionara una opcion: le mostrara el horario que selecciono y el costo 
 
 case 8:
-		printf("\nSeleccionaste:CU a San Pablo \n");
-		system("cls");
-		{
-	do
-	{
-		printf("\nQue  horario desea saber?:\n1)Nocturno \n2)Terminar\n");
-		scanf("%i",&selec);
-		system("cls");
-		switch(selec)
-		{
+		 printf("\nSeleccionaste:CU a San Pablo \n");
+		 		system("clear"); {
+	   do {
+     printf("\nQue  horario desea saber?:\n1)Nocturno \n2)Terminar\n");
+				scanf("%i",&selec);
+				system("clear");
+				switch(selec){
+        
 		case 1:
-			printf("Costo %d, globalPrecio_2\n");
+			printf("Costo:$%d\n", globalPrecio_2);
 			printf("Horarios \n");
-			printf("Horario: %s\n", globalNocturno[selec - 1]);
-			break;;
+			printf("1)%s \n", globalNocturno[9]);
+				break;;
 
 		case 2:
 			printf("Gracias Por Usar Puma Foraneo 7u7 \n");
-			break;
+				break;
 		
-		;
 		}
 
 	}while(selec!=2);
@@ -315,58 +376,58 @@ case 8:
   
 }
 
+// si selecciona la opcion 9 le mostrara 2 opciones de los horarios [ vespertino , nocturno]
+//el usuario seleccionara una opcion: le mostrara el horario que selecciono y el costo 
 
 case 9:
-		printf("\nSeleccionaste:CU a San Bartolo \n");
-		system("cls");
-		{
-	do
-	{
-		printf("\nQue  horario desea saber?:\n 1)Nocturno \n2)Terminar\n");
-		scanf("%i",&selec);
-		system("cls");
-		switch(selec)
-		{
+			printf("\nSeleccionaste:CU a San Bartolo \n");
+				system("clear"); {
+        do{
+        
+			printf("\nQue  horario desea saber?:\n 1)Nocturno \n2)Terminar\n");
+				scanf("%i",&selec);
+				system("clear");
+		    switch(selec){
+        
 		case 1:
-			printf("Costo  \n");
+			printf("Costo:$%d \n", globalPrecio_2);
 			printf("Horarios \n");
-			printf("Horario: %s\n", globalNocturno[selec - 1]);
-			break;
+			printf("1)%s \n", globalNocturno[10]);
+				break;
       
 		case 2:
 			printf("Gracias Por Usar Puma Foraneo 7u7 \n");
-			break;
-		
-		;
+				break;
+	
 		}
 
 	}while(selec!=2);
 	return 0;
   
 }
+// si selecciona la opcion 10 le mostrara 2 opciones de los horarios [ vespertino , nocturno]
+//el usuario seleccionara una opcion: le mostrara el horario que selecciono y el costo 
 
 case 10:
 		printf("\nSeleccionaste:CU a San Mateo \n");
-		system("cls");
-		{
-	do
-	{
-		printf("\nQue  horario desea saber?:\n 1)Nocturno \n2)Terminar\n");
-		scanf("%i",&selec);
-		system("cls");
-		switch(selec)
-		{
+			system("clear"); {
+			do{
+		
+    printf("\nQue  horario desea saber?:\n 1)Nocturno \n2)Terminar\n");
+			scanf("%i",&selec);
+			system("clear");
+			switch(selec) {
+      
 		case 1:
-			printf("Costo %d,globalPrecio_4\n");
+			printf("Costo:$%d\n",globalPrecio_4);
 			printf("Horarios \n");
-			printf("Horario: %s\n", globalNocturno[selec - 1]);
-			break;
+			printf("1)%s \n", globalNocturno[10]);
+				break;
       
 		case 2:
 			printf("Gracias Por Usar Puma Foraneo 7u7 \n");
-			break;
+				break;
 		
-		;
 		}
 
 	}while(selec!=2);
@@ -374,7 +435,7 @@ case 10:
   
 }
 		break;
-
+//opcion invalida
 		default:
 		printf("Opcion es erronea \n ");
 		break;
@@ -383,3 +444,23 @@ case 10:
 
 	return 0;
 }
+
+}
+
+/*
+
+Querido programador:
+
+Cuando hice el codigo, solo dios y yo
+sabiamos como podria funcionar.
+Ahora,¡Solo dios lo sabe!
+
+Asi que si trata de tener una mejor optimización
+y fracasa, por favor, incremente 
+el contador de lineas y las horas perdidas
+para su optimización.
+
+Horas perdidas: 24 hrs
+Ultimo conteo de lineas funcionales: 387
+
+*/
